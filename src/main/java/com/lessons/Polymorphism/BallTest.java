@@ -21,5 +21,8 @@ public class BallTest {
                 System.out.println("打乒乓球");
             }
         }
+
+        Inner_f innerF = new Inner_f();
+        innerF.play();
     }
 }

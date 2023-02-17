@@ -48,5 +48,17 @@ public class Test {
         BallTest ballTest = new BallTest();
         BallTest.Inner_m innerM = ballTest.new Inner_m();
         innerM.play();
+
+        ballTest.info();
+
+        Ball ball = new Ball() {
+            public void play() {
+                System.out.println("**********");
+                System.out.println("匿名内部类：");
+                System.out.println("打排球");
+            }
+        };
+
+        ball.play();
     }
 }
